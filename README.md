@@ -5,6 +5,9 @@ UHM_Market
 # Home Page
 <img class="ui huge image" src="./home-page.png">
 
+#About Us
+![](https://raw.githubusercontent.com/williamycsiu/final-project-mockup/master/doc/about-us.png)
+
 # Category Page
 <img class="ui huge image" src="./category-page.png">
 
