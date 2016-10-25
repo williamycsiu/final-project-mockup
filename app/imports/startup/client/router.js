@@ -8,6 +8,34 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/category', {
+  name: 'Category_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Category_Page' });
+  },
+});
+
+FlowRouter.route('/electronics', {
+  name: 'Electronics_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Electronics_Page' });
+  },
+});
+
+FlowRouter.route('/miscellaneous', {
+  name: 'Miscellaneous_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Miscellaneous_Page' });
+  },
+});
+
+FlowRouter.route('/sell', {
+  name: 'Sell_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Sell_Page' });
+  },
+});
+
 FlowRouter.route('/add-contact', {
   name: 'Add_Contact_Page',
   action() {

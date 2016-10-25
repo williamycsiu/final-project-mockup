@@ -1,0 +1,104 @@
+<template name="Category_Page">
+  <div style="margin: 0px; border-radius: 0px" class="ui borderless item menu">
+
+    <div class="left column">
+      <div class="four wide column">
+        <h1>Electronics</h1>
+        <ul class="left">
+          <li>
+            <a href="#"><span class="item">Calculators</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Cameras</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Computers & Tablets</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Games & Accessories</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Home Electronics</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">iClickers</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Phones</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Speakers</span></a>
+          </li>
+          <li>
+            <a class="{{ isActiveRoute 'Miscellaneous_Page'}} item" href="{{ pathFor 'Miscellaneous_Page' }}"><span>Miscellaneous</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="left column">
+      <div class="four wide column">
+        <h1>School Supplies</h1>
+        <ul class="middle">
+          <li>
+            <a href="#"><span class="item">Bags</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Binders</span></a>
+          </li>
+          <li>
+            <a class="{{ isActiveRoute 'Electronics_Page'}} item" href="{{ pathFor 'Electronics_Page' }}"><span>Electronics</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Folders</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Notebooks</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Pens/Pencils</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Textbooks</span></a>
+          </li>
+          <li>
+            <a class="{{ isActiveRoute 'Miscellaneous_Page'}} item" href="{{ pathFor 'Miscellaneous_Page' }}"><span>Miscellaneous</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="left column">
+      <div class="four wide column">
+        <h1>Housing Items</h1>
+        <ul class="right">
+          <li>
+            <a href="#"><span class="item">Cookware</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Clothes</span></a>
+          </li>
+          <li>
+            <a class="{{ isActiveRoute 'Electronics_Page'}} item" href="{{ pathFor 'Electronics_Page' }}"><span>Electronics</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Furniture</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Sports</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Supplies</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="item">Tools</span></a>
+          </li>
+          <li>
+            <a class="{{ isActiveRoute 'Miscellaneous_Page'}} item" href="{{ pathFor 'Miscellaneous_Page' }}"><span>Miscellaneous</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</template>

@@ -1,9 +1,10 @@
 <template name="Header">
-  <img style="max-height: 200px" class="ui fluid image" src="/images/Digits-Logo.png">
-    <div style="margin: 0px; border-radius: 0px" class="ui borderless inverted menu">
-  <div class="ui container">
-      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Digits</h1></a>
-    <a class="{{ isActiveRoute 'Add_Contact_Page'}} item" href="{{ pathFor 'Add_Contact_Page' }}">Add Contact </a>
+  <img style="max-height: 200px" class="ui fluid image" src="/images/UHM-logo.jpg">
+  <div style="margin: 0px; border-radius: 0px" class="ui borderless inverted menu">
+    <div class="ui container">
+      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>UHM Flea Market</h1></a>
+      <a class="{{ isActiveRoute 'Category_Page'}} item" href="{{ pathFor 'Category_Page' }}"> Categories </a>
+      <a class="{{ isActiveRoute 'Sell_Page'}} item" href="{{ pathFor 'Sell_Page' }}"> Sell </a>
       <a href="#" class="item">{{> loginButtons }} </a>
     </div>
   </div>
