@@ -30,8 +30,8 @@ aldeed:autoform
 sacha:spin
 
 # Account management
-accounts-ui@1.1.9
 accounts-password@1.3.0
+accounts-ui@1.1.9
 
 # Routing
 kadira:flow-router
@@ -43,11 +43,10 @@ arillo:flow-router-helpers
 semantic:ui
 juliancwirko:postcss
 less@2.7.5_1
+useraccounts:semantic-ui
 fabienb4:autoform-semantic-ui
 
 # For prototyping purposes, enable autopublish and insecure
-autopublish@1.0.7
 insecure@1.0.7
-
 
 

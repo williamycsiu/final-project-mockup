@@ -1,12 +1,11 @@
 {
-  "name": "meteor-application-template",
+  "name": "digits",
   "private": true,
   "scripts": {
     "start": "meteor --settings ../config/settings.development.json",
     "lint": "eslint ."
   },
   "dependencies": {
-    "bcrypt": "^0.8.7",
     "meteor-node-stubs": "~0.2.0"
   },
   "devDependencies": {
@@ -22,7 +21,11 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {"browsers": ["last 2 versions"]}
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
     }
   }
 }
