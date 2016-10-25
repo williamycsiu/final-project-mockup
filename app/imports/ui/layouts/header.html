@@ -3,9 +3,11 @@
   <div style="margin: 0px; border-radius: 0px" class="ui borderless inverted menu">
     <div class="ui container">
       <a class="item" href="{{pathFor 'Home_Page'}}"><h1>UHM Flea Market</h1></a>
+      <a class="{{ isActiveRoute 'About_Us_Page'}} item" href="{{ pathFor 'About_Us_Page' }}"> About us </a>
       <a class="{{ isActiveRoute 'Category_Page'}} item" href="{{ pathFor 'Category_Page' }}"> Categories </a>
       <a class="{{ isActiveRoute 'Sell_Page'}} item" href="{{ pathFor 'Sell_Page' }}"> Sell </a>
-      <a href="#" class="item">{{> loginButtons }} </a>
+      <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}"> Profile </a>
+      <a href="#" class="fitted right item">{{> loginButtons }} </a>
     </div>
   </div>
 </template>

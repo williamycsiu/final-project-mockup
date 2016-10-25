@@ -8,6 +8,13 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/about', {
+  name: 'About_Us_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'About_Us_Page' });
+  },
+});
+
 FlowRouter.route('/category', {
   name: 'Category_Page',
   action() {
@@ -26,6 +33,13 @@ FlowRouter.route('/miscellaneous', {
   name: 'Miscellaneous_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Miscellaneous_Page' });
+  },
+});
+
+FlowRouter.route('/profile', {
+  name: 'Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
 
