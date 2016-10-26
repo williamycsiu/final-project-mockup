@@ -4,10 +4,16 @@
     <div class="ui container">
       <a class="item" href="{{pathFor 'Home_Page'}}"><h1>UHM Flea Market</h1></a>
       <a class="{{ isActiveRoute 'About_Us_Page'}} item" href="{{ pathFor 'About_Us_Page' }}"> About us </a>
+      {{#If_Logged_In}}
       <a class="{{ isActiveRoute 'Category_Page'}} item" href="{{ pathFor 'Category_Page' }}"> Categories </a>
-      <a class="{{ isActiveRoute 'Sell_Page'}} item" href="{{ pathFor 'Sell_Page' }}"> Sell </a>
-      <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}"> Profile </a>
-      <a href="#" class="fitted right item">{{> loginButtons }} </a>
+      {{/If_Logged_In}}
+      <div class="ui borderless right item">
+        <a href="#" class="item" style="font-size:24px">{{> loginButtons }} </a>
+        {{#If_Logged_In}}
+        <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}"> Profile </a>
+        <a class="{{ isActiveRoute 'Sell_Page'}} item" href="{{ pathFor 'Sell_Page' }}"> Sell </a>
+        {{/If_Logged_In}}
+      </div>
     </div>
   </div>
 </template>
