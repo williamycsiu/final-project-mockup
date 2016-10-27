@@ -5,6 +5,9 @@ UHM_Market
 # Home Page
 <img class="ui huge image" src="/doc/home-page.png">
 
+# Home Page (signed in)
+<img class="ui huge image" src="/doc/home-page(signed in).png">
+
 #About Us
 <img class="ui huge image" src="/doc/about-us.png">
 
