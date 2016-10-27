@@ -10,8 +10,16 @@
       <div class="ui borderless right item">
         <a href="#" class="item" style="font-size:24px">{{> loginButtons }} </a>
         {{#If_Logged_In}}
-        <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}"> Profile </a>
+        <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}"><img class="ui avatar image" src="/images/UHM-logo.jpg"> Profile </a>
         <a class="{{ isActiveRoute 'Sell_Page'}} item" href="{{ pathFor 'Sell_Page' }}"> Sell </a>
+
+        <div class="ui category search">
+          <div class="ui icon input">
+            <input class="prompt" placeholder="Search Item..." type="text">
+            <i class="search icon"></i>
+          </div>
+          <div class="results"></div>
+        </div>
         {{/If_Logged_In}}
       </div>
     </div>

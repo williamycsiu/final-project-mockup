@@ -2,76 +2,74 @@
   <div style="margin-top: 20px" class="ui container">
     <form class="ui form">
       <h4 class="ui dividing header">Selling Item</h4>
-      <div class="field">
-        <label>Name</label>
-        <div class="two fields">
-          <div class="field">
-            <input name="first" id="first" placeholder="First Name" type="text">
-            <!--
-            {{#if displayFieldError 'first' }}
-            <div class="ui error message">
-              <p>You must specify your first name.</p>
-            </div>
-            {{/if}}
-            -->
+
+      <div class="fields">
+        <div class="eight wide field">
+          <label>Item</label>
+            <input name="item" id="item" placeholder="Item Name" type="text">
           </div>
 
-          <div class="field">
-            <input name="last" id="last" placeholder="Last Name" type="text">
-            <!--
-            {{#if displayFieldError 'last' }}
-            <div class="ui error message">
-              <p>You must specify your last name.</p>
-            </div>
-            {{/if}}
-            -->
+          <div class="two wide field">
+            <label>Price</label>
+            <input name="price" id="price" placeholder="$" type="number">
           </div>
         </div>
-      </div>
 
       <div class="field">
         <label>Telephone/Email</label>
         <div class="two fields">
           <div class="field">
             <input name="telephone" id="telephone" placeholder="XXX-XXX-XXXX" type="text">
-            <!--
-            {{#if displayFieldError 'telephone' }}
-            <div class="ui error message">
-              <p>You must specify your telephone.</p>
-            </div>
-            {{/if}}
-            -->
           </div>
           <div class="field">
-            <input name="email" id="email" placeholder="email" type="text">
-            <!--
-            {{#if displayFieldError 'email' }}
-            <div class="ui error message">
-              <p>You must specify your email.</p>
-            </div>
-            {{/if}}
-            -->
+            <input name="email" id="email" placeholder="Email" type="text">
           </div>
         </div>
       </div>
 
       <div class="field">
-        <label>Description</label>
-        <input name="description" id="description" placeholder="Description" type="text">
-        <!--
-        {{#if displayFieldError 'address' }}
-        <div class="ui error message">
-          <p>You must specify your address.</p>
-        </div>
-        {{/if}}
-        -->
+        <label>Tags</label>
+        <select multiple="" name="skills" class="ui fluid normal dropdown">
+          <option value="item">Bags</option>
+          <option value="item">Binders</option>
+          <option value="item">Calculators</option>
+          <option value="item">Cameras</option>
+          <option value="item">Clothes</option>
+          <option value="item">Computers & Tablets</option>
+          <option value="item">Cookware</option>
+          <option value="item">Electronics</option>
+          <option value="item">Folders</option>
+          <option value="item">Furniture</option>
+          <option value="item">Games & Accessories</option>
+          <option value="item">Home Electronics</option>
+          <option value="item">Home Supplies</option>
+          <option value="item">Housing Items</option>
+          <option value="item">iClicker</option>
+          <option value="item">Miscellaneous</option>
+          <option value="item">Notebooks</option>
+          <option value="item">Pen/Pencils</option>
+          <option value="item">Phone</option>
+          <option value="item">School Supplies</option>
+          <option value="item">Sports</option>
+          <option value="item">Speakers</option>
+          <option value="item">Textbooks</option>
+          <option value="item">Tools</option>
+
+        </select>
       </div>
 
+      <div class="field">
+        <label>Description</label>
+        <textarea></textarea>
+      </div>
+
+      <label>Upload image</label>
       <div class="ui image-upload segment">
         <img style="margin-bottom: 10px" class="ui medium rounded image"
              src="/images/UHM-logo.jpg">
-        <a class="ui mini button">Remove</a>
+        <input type="file" name="item-image">
         <a class="ui mini blue button">Upload</a>
+        <a class="ui mini button">Remove</a>
       </div>
 
       <button class="ui button" type="submit">Submit</button>

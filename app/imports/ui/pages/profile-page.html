@@ -1,62 +1,6 @@
 <template name="Profile_Page">
-  <div style="margin-top: 20px" class="ui container">
-    <form class="ui form">
-      <h4 class="ui dividing header">User Profile</h4>
-      <div class="field">
-        <label>Name</label>
-        <div class="two fields">
-          <div class="field">
-            <input name="first" id="first" placeholder="First Name" type="text">
-            <!--
-            {{#if displayFieldError 'first' }}
-            <div class="ui error message">
-              <p>You must specify your first name.</p>
-            </div>
-            {{/if}}
-            -->
-          </div>
-
-          <div class="field">
-            <input name="last" id="last" placeholder="Last Name" type="text">
-            <!--
-            {{#if displayFieldError 'last' }}
-            <div class="ui error message">
-              <p>You must specify your last name.</p>
-            </div>
-            {{/if}}
-            -->
-          </div>
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Telephone/Email</label>
-        <div class="two fields">
-          <div class="field">
-            <input name="telephone" id="telephone" placeholder="XXX-XXX-XXXX" type="text">
-            <!--
-            {{#if displayFieldError 'telephone' }}
-            <div class="ui error message">
-              <p>You must specify your telephone.</p>
-            </div>
-            {{/if}}
-            -->
-          </div>
-          <div class="field">
-            <input name="email" id="email" placeholder="email" type="text">
-            <!--
-            {{#if displayFieldError 'email' }}
-            <div class="ui error message">
-              <p>You must specify your email.</p>
-            </div>
-            {{/if}}
-            -->
-          </div>
-        </div>
-      </div>
-
-      <button class="ui button" type="submit">Update</button>
-
-    </form>
+  <div style="padding-top: 20px" class="ui container">
+    <a class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}"> Edit profile </a><br/>
+    <a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}"> View listed selling items</a>
   </div>
 </template>
