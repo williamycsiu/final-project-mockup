@@ -11,6 +11,9 @@ UHM_Market
 #About Us
 <img class="ui huge image" src="/doc/about-us.png">
 
+#Bookmark Page
+<img class="ui huge image" src="/doc/bookmark-page.png">
+
 # Category Page
 <img class="ui huge image" src="/doc/category-page.png">
 

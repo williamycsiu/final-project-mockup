@@ -15,6 +15,14 @@ FlowRouter.route('/about', {
   },
 });
 
+FlowRouter.route('/bookmark', {
+  name: 'Bookmark_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Bookmark_Page' });
+  },
+});
+
+
 FlowRouter.route('/category', {
   name: 'Category_Page',
   action() {

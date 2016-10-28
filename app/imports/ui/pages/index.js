@@ -5,6 +5,9 @@ import './home-page.js';
 
 import './about-us-page.html';
 
+import './bookmark-page.html';
+import './bookmark-page.js';
+
 import './category-page.html';
 import './category-page.js';
 

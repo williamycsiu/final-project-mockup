@@ -1,5 +1,4 @@
 import { Template } from 'meteor/templating';
-import { Stuff } from '../../api/stuff/stuff.js';
 
 Template.List_Stuff_Page.helpers({
 
