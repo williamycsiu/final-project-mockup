@@ -23,6 +23,12 @@ UHM_Market
 # User's list of selling items
 <img class="ui huge image" src="/doc/list-page.png">
 
+#Chat with seller and buyer
+<img class="ui huge image" src="/doc/chat-page.png">
+
 # Sub category pages - electronics & misc
 <img class="ui huge image" src="/doc/electronics-page.png">
 <img class="ui huge image" src="/doc/misc-page.png">
+
+# when you click the printer item for more details
+<img class="ui huge image" src="/doc/printer-page.png">

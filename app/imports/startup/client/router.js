@@ -29,6 +29,20 @@ FlowRouter.route('/electronics', {
   },
 });
 
+FlowRouter.route('/item', {
+  name: 'Item_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Item_Page' });
+  },
+});
+
+FlowRouter.route('/message', {
+  name: 'Message_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Message_Page' });
+  },
+});
+
 FlowRouter.route('/miscellaneous', {
   name: 'Miscellaneous_Page',
   action() {

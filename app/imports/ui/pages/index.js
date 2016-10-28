@@ -14,6 +14,11 @@ import './miscellaneous-page.js';
 import './electronics-page.html';
 import './electronics-page.js';
 
+import './item-page.html';
+import './item-page.js';
+
+import './message-page.html';
+
 import './profile-page.html';
 
 import './sell-page.html';
