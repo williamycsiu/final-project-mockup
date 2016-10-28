@@ -1,29 +1,32 @@
 <template name="List_Stuff_Page">
   {{#If_Logged_In}}
-    <div class="ui text container">
-      {{#if Template.subscriptionsReady}}
-        <table style="margin-top: 20px" class="ui celled table">
-          <thead>
-          <tr>
-            <th>Name</th>
-            <th>Quantity</th>
-            <th>Edit</th>
-          </tr>
-          </thead>
-
-          <tbody>
-          {{#each stuff in stuffList}}
-            <tr>
-              <td>{{stuff.name}}</td>
-              <td>{{stuff.quantity}}</td>
-              <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>
-            </tr>
-          {{/each}}
-          </tbody>
-        </table>
-      {{else}}
-        {{> Loading}}
-      {{/if}}
+  <div class="ui container" style="padding-top: 10px">Items selling<hr/></div>
+  <div class="ui link centered cards" style="padding-top: 30px">
+    <div class="card">
+      <div class="content">
+        <div class="right floated meta">23h ago</div>
+        <a class="image" href="#">
+          <img class="ui avatar image" src="/images/UHM-logo.jpg"> Random Person
+        </a>
+      </div>
+      <a href="#" class="small image">
+        <img src="/images/printer.png">
+      </a>
+      <div class="content">
+        <a class="header">Printer</a>
+        <div class="meta">
+          <a>$70</a>
+        </div>
+        <div class="description">
+          <a href="#" style="color:black">Graduating this Spring! Printer still in good condition. Extra inks and printing
+            paper included!</a>
+        </div>
+      </div>
+      <div class="content">
+        User Rating:
+        <div class="ui rating" data-rating="5"></div>
+      </div>
     </div>
+  </div>
   {{/If_Logged_In}}
 </template>

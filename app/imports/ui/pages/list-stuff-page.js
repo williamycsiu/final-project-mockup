@@ -10,3 +10,9 @@ Template.List_Stuff_Page.helpers({
     return Stuff.find();
   },
 });
+
+Template.List_Stuff_Page.onRendered(function () {
+  this.$('.ui.rating').rating({
+    maxRating: 5,
+  });
+});
