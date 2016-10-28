@@ -17,7 +17,8 @@ UHM_Market
 # Sell an item
 <img class="ui huge image" src="/doc/sell-page.png">
 
-# User Profile
+# User Profile/Edit Profile
+<img class="ui huge image" src="/doc/profile-options-page.png">
 <img class="ui huge image" src="/doc/profile-page.png">
 
 # User's list of selling items
