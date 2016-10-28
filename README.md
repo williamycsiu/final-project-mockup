@@ -20,6 +20,9 @@ UHM_Market
 # User Profile
 <img class="ui huge image" src="/doc/profile-page.png">
 
+# User's list of selling items
+<img class="ui huge image" src="/doc/list-page.png">
+
 # Sub category pages - electronics & misc
 <img class="ui huge image" src="/doc/electronics-page.png">
 <img class="ui huge image" src="/doc/misc-page.png">
