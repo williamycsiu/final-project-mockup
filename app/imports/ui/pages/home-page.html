@@ -4,37 +4,6 @@
       <p style="padding: 10px">Welcome to the University of Hawaii at Manoa Flea Market!<br/>
       Please login if you wish to view, buy, or sell an item. Create an account with your UHM info if you have not yet!<br/>
       <b>Any violation of the <a href="http://studentaffairs.manoa.hawaii.edu/policies/conduct_code/proscribed_conduct.php"> Terms of Use</a> will result in a ban to their account!</b></p>
-      <!--
-        {{#if Template.subscriptionsReady}}
-        <table style="margin-top: 20px" class="ui celled table">
-            <thead>
-            <tr>
-                <th>First</th>
-                <th>Last</th>
-                <th>Address</th>
-                <th>Phone</th>
-                <th>Email</th>
-                <th>Edit</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            {{#each contact in contactsList}}
-            <tr>
-                <td>{{contact.first}}</td>
-                <td>{{contact.last}}</td>
-                <td>{{contact.address}}</td>
-                <td>{{contact.telephone}}</td>
-                <td>{{contact.email}}</td>
-                <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
-            </tr>
-            {{/each}}
-            </tbody>
-        </table>
-        {{else}}
-        {{> Loading}}
-        {{/if}}
-        -->
       {{ else }}
       <div class="ui text container">
         <p>You are not authorized to view this page. Please login.</p>
