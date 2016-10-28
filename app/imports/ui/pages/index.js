@@ -18,6 +18,7 @@ import './item-page.html';
 import './item-page.js';
 
 import './message-page.html';
+import './message-page.js';
 
 import './profile-page.html';
 
